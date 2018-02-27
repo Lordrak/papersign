@@ -1,3 +1,7 @@
+@extends('layouts.index')
+
+@section('register')
+
 {!!Form::open(['action' =>'ApprenantsController@store'])!!}
 Nom<input name="nom" type="text"><br>
 Prénom<input name="prenom" type="text"><br>
@@ -18,3 +22,5 @@ Email_mdef<input name="email_mdef" type="text">
     {{$apprenant->email_teacher}}
     {{$apprenant->email_mdef}}<br>
 @endforeach
+
+@endsection

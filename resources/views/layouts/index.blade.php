@@ -6,5 +6,7 @@
 
 <body>
 
+@yield('register')
+
 </body>
 </html>

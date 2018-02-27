@@ -15,7 +15,7 @@ class ApprenantsController extends Controller
     public function index()
     {
         $apprenants = DB::table("apprenants")->get();
-        return view('index')->with('apprenants',$apprenants);
+        return view('pages/register')->with('apprenants',$apprenants);
     }
 
     /**
