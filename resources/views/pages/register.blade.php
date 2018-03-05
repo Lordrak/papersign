@@ -95,6 +95,30 @@
     <!-- END TEACHER BLOCK ////////////////-->
     <!-- END FORM ////////////////////////////////////////////-->
 
+    <!-- CARDS BLOCK -->
+    @foreach($apprenants as $apprenant)
+    <div class="cards">
+        <div class="cards__avatar">
+            <img src="images/{{$apprenant->email_user}}.png" alt="avatar" class="cards__avatar-content">
+        </div> 
+        <div class="cards__info">
+            <div class="cards__text">
+                <h2 class="cards__text-lastname">{{$apprenant->prenom}}</h2>
+                <h2 class="cards__text-firstname">{{$apprenant->nom}}</h2>
+                <p class="cards__text-mail">{{$apprenant->email_user}}</p>
+            </div>
+        </div>
+        <div class="cards__btn">
+            <div class="cards__btn-container">
+                <button class="cards__btn-update">Modifier</button>
+                <button class="cards__btn-delete">Delete</button>
+            </div>
+        </div>
+    </div>
+    @endforeach
+    <!-- END CARDS BLOCK -->
+
+
 
     <!-- exemple de code de cards-->
     <!-- <div class="wrapper">

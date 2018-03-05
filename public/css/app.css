@@ -29,7 +29,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 0 40vw;
 }
 
 .effect1 {
@@ -58,6 +58,13 @@ body {
   transform: rotate(3deg);
   right: 10px;
   left: auto;
+}
+
+.btn, .cards__btn-update, .cards__btn-delete {
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header {
@@ -180,7 +187,7 @@ body {
 
 .form {
   width: 90vw;
-  margin: 6vw auto 15vw;
+  margin: 6vw auto 10vw;
   border: 1px solid #f1f1f1;
   border-radius: 8px;
   font-family: "Archivo Black", sans-serif;
@@ -286,6 +293,93 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
   }
+}
+
+.cards {
+  width: 90vw;
+  height: 22vw;
+  margin: 0 auto 5vw;
+  border-top-left-radius: 10vw;
+  border-bottom-left-radius: 10vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  box-shadow: 0px 6px 32px 0px #d1d1d1;
+  margin-bottom: 4vw;
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.cards__avatar {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 10vw;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-left: 1vw;
+}
+
+.cards__avatar-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 10vw;
+}
+
+.cards__info {
+  width: 45vw;
+  height: 100%;
+}
+
+.cards__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__text-lastname {
+  color: #a7a7a7;
+  font-size: 4vw;
+  margin: 2.5vw 0 0 5vw;
+  text-transform: capitalize;
+}
+
+.cards__text-firstname {
+  color: #a7a7a7;
+  font-size: 4vw;
+  margin: 1.5vw 0 0 5vw;
+  text-transform: uppercase;
+}
+
+.cards__text-mail {
+  color: #a7a7a7;
+  font-size: 3vw;
+  margin: 1.5vw 0 0 5vw;
+}
+
+.cards__btn {
+  width: 25vw;
+}
+
+.cards__btn-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cards__btn-update {
+  height: 8vw;
+  width: 20vw;
+  background-color: #3a99e7;
+  border-radius: 4vw;
+}
+
+.cards__btn-delete {
+  height: 8vw;
+  width: 20vw;
+  background-color: #e73a3a;
+  border-radius: 4vw;
 }
 
 .label-file {
