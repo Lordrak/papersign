@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?32864c');
+    src:  url('fonts/icomoon.eot?32864c#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?32864c') format('truetype'),
+      url('fonts/icomoon.woff?32864c') format('woff'),
+      url('fonts/icomoon.svg?32864c#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-lock:before {
+    content: "\e905";
+  }
+  .icon-lock-closed:before {
+    content: "\e906";
+  }
+  .icon-locked:before {
+    content: "\e900";
+  }
+  .icon-encryption:before {
+    content: "\e900";
+  }
+  .icon-login:before {
+    content: "\e900";
+  }
+  .icon-log-in:before {
+    content: "\e900";
+  }
+  .icon-briefcase:before {
+    content: "\e907";
+  }
+  .icon-portfolio:before {
+    content: "\e907";
+  }
+  .icon-suitcase:before {
+    content: "\e907";
+  }
+  .icon-work:before {
+    content: "\e907";
+  }
+  .icon-job:before {
+    content: "\e907";
+  }
+  .icon-employee:before {
+    content: "\e907";
+  }
+  .icon-info:before {
+    content: "\e908";
+  }
+  .icon-information:before {
+    content: "\e908";
+  }
+  .icon-location:before {
+    content: "\e909";
+  }
+  .icon-map-marker:before {
+    content: "\e909";
+  }
+  .icon-pin:before {
+    content: "\e909";
+  }
+  .icon-location2:before {
+    content: "\e90a";
+  }
+  .icon-map-marker2:before {
+    content: "\e90a";
+  }
+  .icon-pin2:before {
+    content: "\e90a";
+  }
+  .icon-user-check:before {
+    content: "\e90b";
+  }
+  .icon-user:before {
+    content: "\e90b";
+  }
+  .icon-user-tick:before {
+    content: "\e90b";
+  }
+  .icon-profile:before {
+    content: "\e90b";
+  }
+  .icon-avatar:before {
+    content: "\e90b";
+  }
+  .icon-person:before {
+    content: "\e90b";
+  }
+  .icon-member:before {
+    content: "\e90b";
+  }
+  .icon-user-minus:before {
+    content: "\e90c";
+  }
+  .icon-user2:before {
+    content: "\e90c";
+  }
+  .icon-user-remove:before {
+    content: "\e90c";
+  }
+  .icon-profile2:before {
+    content: "\e90c";
+  }
+  .icon-avatar2:before {
+    content: "\e90c";
+  }
+  .icon-person2:before {
+    content: "\e90c";
+  }
+  .icon-member2:before {
+    content: "\e90c";
+  }
+  .icon-user-plus:before {
+    content: "\e90d";
+  }
+  .icon-user3:before {
+    content: "\e90d";
+  }
+  .icon-user-add:before {
+    content: "\e90d";
+  }
+  .icon-profile3:before {
+    content: "\e90d";
+  }
+  .icon-avatar3:before {
+    content: "\e90d";
+  }
+  .icon-person3:before {
+    content: "\e90d";
+  }
+  .icon-member3:before {
+    content: "\e90d";
+  }
+  .icon-user4:before {
+    content: "\e90e";
+  }
+  .icon-profile4:before {
+    content: "\e90e";
+  }
+  .icon-avatar4:before {
+    content: "\e90e";
+  }
+  .icon-person4:before {
+    content: "\e90e";
+  }
+  .icon-member4:before {
+    content: "\e90e";
+  }
+  .icon-mail:before {
+    content: "\e901";
+  }
+  .icon-contact:before {
+    content: "\e901";
+  }
+  .icon-support:before {
+    content: "\e901";
+  }
+  .icon-newsletter:before {
+    content: "\e901";
+  }
+  .icon-letter:before {
+    content: "\e901";
+  }
+  .icon-email:before {
+    content: "\e901";
+  }
+  .icon-envelop:before {
+    content: "\e901";
+  }
+  .icon-social:before {
+    content: "\e901";
+  }
+  .icon-envelop2:before {
+    content: "\e902";
+  }
+  .icon-mail2:before {
+    content: "\e902";
+  }
+  .icon-email2:before {
+    content: "\e902";
+  }
+  .icon-contact2:before {
+    content: "\e902";
+  }
+  .icon-letter2:before {
+    content: "\e902";
+  }
+  .icon-graduation-cap:before {
+    content: "\e90f";
+  }
+  .icon-mortar-board:before {
+    content: "\e90f";
+  }
+  .icon-envelope-o:before {
+    content: "\e903";
+  }
+  .icon-envelope:before {
+    content: "\e904";
+  }

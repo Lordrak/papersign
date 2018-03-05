@@ -1,3 +1,579 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+.effect1 {
+  box-shadow: 0 8px 20px 2px #d1d1d1;
+}
+
+.effect2 {
+  position: relative;
+}
+
+.effect2:before, .effect2:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+
+.effect2:after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+body {
+  margin: 0;
+}
+
+.effect1 {
+  box-shadow: 0 8px 20px 2px #d1d1d1;
+}
+
+.effect2 {
+  position: relative;
+}
+
+.effect2:before, .effect2:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+
+.effect2:after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.header {
+  position: relative;
+  margin: 0;
+}
+
+.header__logo-simplon {
+  position: absolute;
+  width: 16vw;
+  left: 6vw;
+  top: 1vw;
+}
+
+@media screen and (min-width: 680px) {
+  .header__logo-simplon {
+    width: 12vw;
+    top: 0;
+    left: 17vw;
+  }
+}
+
+.header__logo-brand {
+  display: block;
+  width: 50vw;
+  margin: 5vw auto;
+}
+
+@media screen and (min-width: 680px) {
+  .header__logo-brand {
+    width: 30vw;
+  }
+}
+
+.form__input {
+  height: 7vw;
+  width: 80vw;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 4vw;
+  border: 1px solid #f1f1f1;
+  background-color: #f9f9f9;
+  animation-delay: 1s;
+}
+
+@media screen and (min-width: 680px) {
+  .form__input {
+    width: 25vw;
+    height: 3vw;
+    margin-bottom: 2vw;
+    margin: 0;
+  }
+}
+
+.form__input:hover {
+  border: 1px solid #6fe9cb;
+  background-color: #f1f1f1;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-size: 3vw;
+  color: grey;
+  position: relative;
+  left: 3vw;
+}
+
+.form__input:-ms-input-placeholder {
+  font-size: 3vw;
+  color: grey;
+  position: relative;
+  left: 3vw;
+}
+
+.form__input::placeholder {
+  font-size: 3vw;
+  color: grey;
+  position: relative;
+  left: 3vw;
+}
+
+@media screen and (min-width: 680px) {
+  .form__input::-webkit-input-placeholder {
+    font-size: 1.5vw;
+    top: 0.2vw;
+  }
+  .form__input:-ms-input-placeholder {
+    font-size: 1.5vw;
+    top: 0.2vw;
+  }
+  .form__input::placeholder {
+    font-size: 1.5vw;
+    top: 0.2vw;
+  }
+}
+
+.form__input--submit {
+  height: 8vw;
+  width: 80vw;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 4vw;
+  border: 1px solid #f1f1f1;
+  background-color: #0db885;
+  font-size: 3vw;
+  font-family: Helvetica;
+  color: #fff;
+}
+
+@media screen and (min-width: 680px) {
+  .form__input--submit {
+    width: 25vw;
+    height: 3.5vw;
+    font-size: 1.5vw;
+  }
+}
+
+.form__input--submit:hover {
+  background-color: #6fe9cb;
+}
+
+.form {
+  width: 90vw;
+  margin: 6vw auto 15vw;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+@media screen and (min-width: 680px) {
+  .form {
+    width: 60vw;
+  }
+}
+
+.form__title {
+  font-size: 4vw;
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  margin: 0 0 4vw;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 680px) {
+  .form__title {
+    font-size: 2vw;
+  }
+}
+
+.form__sub {
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 680px) {
+  .form__sub {
+    font-size: 2vw;
+  }
+}
+
+.form__section {
+  width: 80vw;
+  height: 4vw;
+  margin: 0 auto;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+@media screen and (min-width: 680px) {
+  .form__section {
+    width: 40vw;
+  }
+}
+
+.form__section-icon {
+  font-size: 4vw;
+  position: relative;
+  left: -35vw;
+}
+
+.form__section-icon--account {
+  bottom: 0.5vw;
+  left: -35vw;
+  position: relative;
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 680px) {
+  .form__section-icon--account {
+    font-size: 2vw;
+    left: -19vw;
+  }
+}
+
+.form__section-icon--location {
+  bottom: 0.5vw;
+  left: -35vw;
+  position: relative;
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 680px) {
+  .form__section-icon--location {
+    font-size: 2vw;
+    left: -19vw;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .form__section-icon {
+    font-size: 2vw;
+    left: -19vw;
+  }
+}
+
+.form__container-display {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 3vw 0;
+  margin: 0 3vw 3vw;
+}
+
+@media screen and (min-width: 680px) {
+  .form__container-display {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+.label-file {
+  cursor: pointer;
+  color: #00b1ca;
+  font-weight: bold;
+}
+
+.label-file:hover {
+  color: #25a5c4;
+}
+
+.input-file {
+  display: none;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?32864c");
+  src: url("fonts/icomoon.eot?32864c#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?32864c") format("truetype"), url("fonts/icomoon.woff?32864c") format("woff"), url("fonts/icomoon.svg?32864c#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lock:before {
+  content: "\e905";
+}
+
+.icon-lock-closed:before {
+  content: "\e906";
+}
+
+.icon-locked:before {
+  content: "\e900";
+}
+
+.icon-encryption:before {
+  content: "\e900";
+}
+
+.icon-login:before {
+  content: "\e900";
+}
+
+.icon-log-in:before {
+  content: "\e900";
+}
+
+.icon-briefcase:before {
+  content: "\e907";
+}
+
+.icon-portfolio:before {
+  content: "\e907";
+}
+
+.icon-suitcase:before {
+  content: "\e907";
+}
+
+.icon-work:before {
+  content: "\e907";
+}
+
+.icon-job:before {
+  content: "\e907";
+}
+
+.icon-employee:before {
+  content: "\e907";
+}
+
+.icon-info:before {
+  content: "\e908";
+}
+
+.icon-information:before {
+  content: "\e908";
+}
+
+.icon-location:before {
+  content: "\e909";
+}
+
+.icon-map-marker:before {
+  content: "\e909";
+}
+
+.icon-pin:before {
+  content: "\e909";
+}
+
+.icon-location2:before {
+  content: "\e90a";
+}
+
+.icon-map-marker2:before {
+  content: "\e90a";
+}
+
+.icon-pin2:before {
+  content: "\e90a";
+}
+
+.icon-user-check:before {
+  content: "\e90b";
+}
+
+.icon-user:before {
+  content: "\e90b";
+}
+
+.icon-user-tick:before {
+  content: "\e90b";
+}
+
+.icon-profile:before {
+  content: "\e90b";
+}
+
+.icon-avatar:before {
+  content: "\e90b";
+}
+
+.icon-person:before {
+  content: "\e90b";
+}
+
+.icon-member:before {
+  content: "\e90b";
+}
+
+.icon-user-minus:before {
+  content: "\e90c";
+}
+
+.icon-user2:before {
+  content: "\e90c";
+}
+
+.icon-user-remove:before {
+  content: "\e90c";
+}
+
+.icon-profile2:before {
+  content: "\e90c";
+}
+
+.icon-avatar2:before {
+  content: "\e90c";
+}
+
+.icon-person2:before {
+  content: "\e90c";
+}
+
+.icon-member2:before {
+  content: "\e90c";
+}
+
+.icon-user-plus:before {
+  content: "\e90d";
+}
+
+.icon-user3:before {
+  content: "\e90d";
+}
+
+.icon-user-add:before {
+  content: "\e90d";
+}
+
+.icon-profile3:before {
+  content: "\e90d";
+}
+
+.icon-avatar3:before {
+  content: "\e90d";
+}
+
+.icon-person3:before {
+  content: "\e90d";
+}
+
+.icon-member3:before {
+  content: "\e90d";
+}
+
+.icon-user4:before {
+  content: "\e90e";
+}
+
+.icon-profile4:before {
+  content: "\e90e";
+}
+
+.icon-avatar4:before {
+  content: "\e90e";
+}
+
+.icon-person4:before {
+  content: "\e90e";
+}
+
+.icon-member4:before {
+  content: "\e90e";
+}
+
+.icon-mail:before {
+  content: "\e901";
+}
+
+.icon-contact:before {
+  content: "\e901";
+}
+
+.icon-support:before {
+  content: "\e901";
+}
+
+.icon-newsletter:before {
+  content: "\e901";
+}
+
+.icon-letter:before {
+  content: "\e901";
+}
+
+.icon-email:before {
+  content: "\e901";
+}
+
+.icon-envelop:before {
+  content: "\e901";
+}
+
+.icon-social:before {
+  content: "\e901";
+}
+
+.icon-envelop2:before {
+  content: "\e902";
+}
+
+.icon-mail2:before {
+  content: "\e902";
+}
+
+.icon-email2:before {
+  content: "\e902";
+}
+
+.icon-contact2:before {
+  content: "\e902";
+}
+
+.icon-letter2:before {
+  content: "\e902";
+}
+
+.icon-graduation-cap:before {
+  content: "\e90f";
+}
+
+.icon-mortar-board:before {
+  content: "\e90f";
+}
+
+.icon-envelope-o:before {
+  content: "\e903";
+}
+
+.icon-envelope:before {
+  content: "\e904";
+}
 
 /*# sourceMappingURL=app.css.map */
