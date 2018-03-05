@@ -69,8 +69,8 @@ class ApprenantsController extends Controller
       
 
         Apprenant::create($input);
-        echo 1;
-      // return redirect()->action('ApprenantsController@index');
+        
+       return redirect()->action('ApprenantsController@index');
 
   }
            
