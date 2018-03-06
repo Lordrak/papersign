@@ -14,3 +14,7 @@
 //Route::get('/', 'ApprenantsController@index');
 
 Route::resource('','ApprenantsController');
+
+Route::post('test',function(){
+	return 'test';
+});

@@ -99,7 +99,7 @@
     @foreach($apprenants as $apprenant)
     <div class="cards">
         <div class="cards__avatar">
-            <img src="images/{{$apprenant->email_user}}.png" alt="avatar" class="cards__avatar-content">
+            <img src="{{asset('images/'.$apprenant->avatar)}}" alt="avatar" class="cards__avatar-content">
         </div> 
         <div class="cards__info">
             <div class="cards__text">
