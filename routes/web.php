@@ -23,6 +23,10 @@ route::put('/update/{id}','ApprenantsController@update')->name('apprenants.updat
 
 route::get('display','ApprenantsController@display');
 
+route::get('signature',function(){
+	return view('pages.signature');
+});
+
 Route::post('test',function(){
 	return 'test';
 });

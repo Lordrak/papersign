@@ -86,10 +86,10 @@
     </div>
     <div class="form__container-display">
         <div>
-            <input class="form__input" name="email_teacher" type="text" placeholder="Formateur">
+            <input class="form__input" name="email_teacher" type="text" placeholder="Email Formateur">
         </div>
         <div>
-            <input class="form__input" name="email_mdef" type="text" placeholder="MDEF">
+            <input class="form__input" name="email_mdef" type="text" placeholder="Email MDEF">
         </div>
     </div>
     <input class="form__input--submit" type="submit" value="ajouter">
