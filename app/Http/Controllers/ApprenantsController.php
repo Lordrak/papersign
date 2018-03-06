@@ -93,7 +93,8 @@ class ApprenantsController extends Controller
     */
    public function edit($id)
    {
-       
+      $apprenant = Apprenant::find($id);
+      return view('pages.update')->with('apprenant', $apprenant);
    }
 
    /**
@@ -105,7 +106,29 @@ class ApprenantsController extends Controller
     */
    public function update(Request $request, $id)
    {
-       //
+       request()->validate([
+          'nom'=>'required',
+          'prenom'=>'required',
+          'formation'=>'required',
+          'lieu'=>'required',
+          'email_user'=>'required',
+          'email_teacher'=>'required',
+          'email_mdef'=>'required',
+          'avatar' => 'required|image|mimes:jpeg,png,jpg,gif,svg'
+      ]);
+
+      $input['nom']= $request->nom;
+      $input['prenom']=$request->prenom;
+      $input['formation']=$request->formation;
+      $input['lieu']=$request->lieu;
+      $input['email_user']=$request->email_user;
+      $input['email_teacher']=$request->email_teacher;
+      $input['email_mdef']=$request->email_mdef;
+      $input['avatar']=$request->email_user.'.'.$request->file('avatar')->getClientOriginalExtension();
+
+        Apprenant::find($id)->update($input);
+        return redirect()->action('ApprenantsController@index');
+
    }
 
    /**
@@ -114,9 +137,10 @@ class ApprenantsController extends Controller
     * @param  int  $id
     * @return \Illuminate\Http\Response
     */
-   public function destroy($email)
+   public function destroy($id)
    {
-       
-   
+        Apprenant::find($id)->delete();
+        return redirect()->action('ApprenantsController@index');
+
    }
 }

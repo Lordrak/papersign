@@ -15,6 +15,10 @@
 
 Route::resource('','ApprenantsController');
 
+Route::delete('/{id}','ApprenantsController@destroy')->name('apprenants.delete');
+
+route::get('/update/{id}','ApprenantsController@edit')->name('apprenants.update');
+
 Route::post('test',function(){
 	return 'test';
 });
