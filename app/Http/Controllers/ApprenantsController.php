@@ -135,4 +135,9 @@ class ApprenantsController extends Controller
         return redirect()->action('ApprenantsController@index');
 
    }
+
+   public function display(){
+       $apprenants = DB::table("apprenants")->get();
+       return view('pages.display')->with('apprenants',$apprenants);
+   }
 }

@@ -21,6 +21,8 @@ route::get('/update/{id}','ApprenantsController@edit')->name('apprenants.show');
 
 route::put('/update/{id}','ApprenantsController@update')->name('apprenants.update');
 
+route::get('display','ApprenantsController@display');
+
 Route::post('test',function(){
 	return 'test';
 });

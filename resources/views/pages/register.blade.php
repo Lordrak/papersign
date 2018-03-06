@@ -122,5 +122,7 @@
         </div>
     </div>
     @endforeach
+
+    <button class="form__input--submit" onclick="window.location='{{ action("ApprenantsController@display") }}'">Enregistrer</button>
     <!-- END CARDS BLOCK -->
 @endsection

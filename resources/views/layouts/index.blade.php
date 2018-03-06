@@ -13,6 +13,7 @@
 
 @yield('register')
 @yield('update')
+@yield('display')
 
 </body>
 </html>
