@@ -12,6 +12,7 @@
 <body>
 
 @yield('register')
+@yield('update')
 
 </body>
 </html>
