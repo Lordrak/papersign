@@ -18,7 +18,7 @@
         </div>
         <div>
             <label for="file" class="label-file">Choisir une image</label>
-            <input id="file" class="input-file" type="file" name="avatar">
+            <input id="file" class="input-file" type="file" name="avatar" value="{{$apprenant->avatar}}">
         </div>
         <br/>
         <input class="form__input--submit" type="submit" value="ajouter">
