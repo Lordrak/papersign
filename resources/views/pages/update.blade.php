@@ -9,14 +9,11 @@
             <span class="form__section-icon--account fas fa-user"></span>
         </div>
         <div class="form__container-display">
-        {!! Form::open(array('action' => 'ApprenantsController@store', 'files' => 'true')) !!}    
-            <input class="form__input" name="nom" type="text" placeholder="{{$apprenant->nom}}">  
+        {!! Form::open(array('route'=>['apprenants.update', $apprenant->id],'method' => 'put', 'files' => 'true')) !!}
+            <input class="form__input" name="nom" type="text" placeholder="{{$apprenant->nom}}" value="{{$apprenant->nom}}">  
         </div>
         <div>
-            <input class="form__input" name="prenom" type="text" placeholder="{{$apprenant->prenom}}">
-        </div>
-        <div>
-            <input class="form__input" name="email_user" type="mail" placeholder="{{$apprenant->email_user}}">
+            <input class="form__input" name="prenom" type="text" placeholder="{{$apprenant->prenom}}" value="{{$apprenant->prenom}}">
         </div>
         <div>
             <label for="file" class="label-file">Choisir une image</label>

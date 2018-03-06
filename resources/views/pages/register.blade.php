@@ -111,7 +111,7 @@
         </div>
         <div class="cards__btn">
             <div class="cards__btn-container">
-            <button class="cards__btn-update" onclick="window.location='{{ route("apprenants.update", $apprenant->id) }}'">Modifier</button>
+            <button class="cards__btn-update" onclick="window.location='{{ route("apprenants.show", $apprenant->id) }}'">Modifier</button>
                 {!! Form::open(array('route'=>['apprenants.delete', $apprenant->id],'method' => 'delete', 'files' => 'true')) !!}
                <button class="cards__btn-delete">Delete</button>
                {!! Form:: close() !!}
