@@ -22,25 +22,28 @@
     <div class="form__section">
         <span class="form__section-icon--account fas fa-user"></span>
     </div>
-
+ {!! Form::open(array('action' => 'ApprenantsController@store', 'files' => 'true')) !!}
     <div class="form__container-display">
-    {!! Form::open(array('action' => 'ApprenantsController@store', 'files' => 'true')) !!}        <div>
+        <div>
             <input class="form__input" name="nom" type="text" placeholder="Nom">  
         </div>
         <div>
             <input class="form__input" name="prenom" type="text" placeholder="Prénom">
         </div>
+    </div>
         <div>
             <!-- <input class="form__input--file" name="avatar" type="file"> -->
             <label for="file" class="label-file">Choisir une image</label>
             <input id="file" class="input-file" type="file" name="avatar">
         </div>
-    </div>
+<br/>
+
     <!-- END ACCOUNT SECTION -->
 
     <!-- LOCATION SECTION -->
     <div class="form__section">
-        <span class="form__section-icon--location fas fa-map-marker-alt"></span>
+        <span class="form__section-icon--location fas fa-map-marker-alt" ></span>
+        
     </div>
     <div class="form__container-display">
         <div>
@@ -88,9 +91,9 @@
         <div>
             <input class="form__input" name="email_mdef" type="text" placeholder="MDEF">
         </div>
-        <input class="form__input--submit" type="submit" value="ajouter">
-        {!!Form::close()!!}
     </div>
+    <input class="form__input--submit" type="submit" value="ajouter">
+        {!!Form::close()!!}
 </div>
     <!-- END EMAIL SECTION -->
     <!-- END TEACHER BLOCK ////////////////-->
@@ -120,37 +123,4 @@
     </div>
     @endforeach
     <!-- END CARDS BLOCK -->
-
-
-
 @endsection
-    <!-- exemple de code de cards-->
-    <!-- <div class="wrapper">
-    <div class="product-img">
-      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>Harvest Vase</h1>
-        <h2>by studio and friends</h2>
-        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-      </div>
-      <div class="product-price-btn">
-        <p><span>78</span>$</p>
-        <button type="button">buy now</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-    <!-- fin exemple de code de cards-->
-
-
-<!-- @foreach($apprenants as $apprenant)
-    {{$apprenant->nom}}
-    {{$apprenant->prenom}}
-    {{$apprenant->formation}}
-    {{$apprenant->lieu}}
-    {{$apprenant->email_user}}
-    {{$apprenant->email_teacher}}
-    {{$apprenant->email_mdef}}<br>
-@endforeach -->
